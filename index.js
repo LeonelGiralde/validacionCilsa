@@ -65,6 +65,11 @@ form.addEventListener("submit", e => {
         entrar = true
     }
 
+    if (pais.value=== "") {
+        warning += "El campo pais no puede estar vacio <br>"
+        entrar = true
+    }
+
     if (entrar) {
         parrafo.innerHTML = warning
     }
